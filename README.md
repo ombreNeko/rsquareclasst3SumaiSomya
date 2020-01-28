@@ -1,22 +1,7 @@
 # Rsquare Class Repo
+Submission for test3.
 
-## How to install
-- Install virtualenv library to create virtual environments using the command ```pip3 install virtualenv```
-
-- Create a virtual environment using `virtualenv venv`
-
-- Activate the environment using `source venv/bin/activate`
-
-- Install the requirements `pip install -r requirements.txt`
-
-- Your project is now set up
-
-
-## Running the project
-- Make sure your environment is activated.
-
-- Run the new migrations(if any) using `python manage.py migrate`
-
-- Run the server using `python manage.py runserver`
-
-- Your project is now running at `localhost:8000`
+#Created a separate folder in static called test3 to put all my static files.
+#Created a separate view function add_guardian_list_temp() to render the form.
+#Created separate file in templates->student named test3 which contains the new form named guardian_form2.html
+ 
