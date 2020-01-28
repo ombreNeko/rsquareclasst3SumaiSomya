@@ -16,6 +16,7 @@ Dashboard | RsquareClass
 <link href="{% static 'assets/css/test3/progressbar_temp.css' %}" rel="stylesheet" />
 <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
 <link href="{% static 'assets/css/test3/style2.css' %}" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
 {% endblock %}
 
@@ -74,7 +75,7 @@ Dashboard | RsquareClass
                                 <div class="col-md-2">
                                     <div class="button-container">
                                         <div class="button-items">
-                                            <button id = "prev-button" class="btn btn-warning" >previous</button>
+                                            <button id = "prev-button" class="btn btn-warning" >previous </button>
                                             <button id="next-button" class="btn btn-primary">next</button>
                                         </div>
                                     </div>
@@ -87,10 +88,14 @@ Dashboard | RsquareClass
                                     <div class="button-container">
                                         <div class="button-items">
                                             <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal">
+                                                <i class="fas fa-bars"></i>
                                                 Reorder
+                                                
                                             </button>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                <i class="fas fa-plus-circle"></i>
                                                 Add Guardian
+                                                
                                             </button>
 
                                         </div>
@@ -106,7 +111,10 @@ Dashboard | RsquareClass
                                     <div class="list-group">
                                         {% for guardian in guardian_list  %}
                                         <a class="list-group-item list-group-item-action" id='list-guardian'>
-                                            {{guardian.salutation}} {{ guardian.first_name }} {{guardian.last_name}}</a>
+                                            {{guardian.salutation}} {{ guardian.first_name }} {{guardian.last_name}}
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </a>
+                                            
                                         {% endfor %}
                                     
                                     {% else %}
