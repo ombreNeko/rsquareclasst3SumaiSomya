@@ -59,16 +59,19 @@ Dashboard | RsquareClass
                                 Add guardian details
                             </p>   
                             <div class="row" id="progress-bar-container">
-                                <div id="propgress-bar-env" class="col-md-8">
-                                    <ul id="progress-bar">
-                                        <li>Basic Details</li>
-                                        <li class="active">Guardian Details</li>
-                                        <li>Course Details</li>
-                                        <li>Payment Details</li>
-                                        <li>Batch Details</li>
-                                    </ul>
+
+                                <div id="progress-bar-env" class="col-md-10">
+
+                                    <div class="progressb flat">
+                                        <a href="#" >Basic Details</a>
+                                        <a href="#" class="active" >Guardian Details</a>
+                                        <a href="#">Course Details</a>
+                                        <a href="#">Payment Details</a>
+                                        <a href="#">Batch Details</a>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="button-container">
                                         <div class="button-items">
                                             <button id = "prev-button" class="btn btn-warning" >previous</button>
@@ -83,7 +86,7 @@ Dashboard | RsquareClass
                                 <div class="col-md-5 offset-md-7">
                                     <div class="button-container">
                                         <div class="button-items">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal">
                                                 Reorder
                                             </button>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -96,9 +99,9 @@ Dashboard | RsquareClass
                                 </div>
 
                             </div>
-
+                            <br>
                             <div id='guardian_list_parent' class='row' >
-                                <div class= "guardian_list_item col-md-8">
+                                <div class= "guardian_list_item col-md-10">
                                     {% if guardian_list %}
                                     <div class="list-group">
                                         {% for guardian in guardian_list  %}
@@ -268,14 +271,3 @@ $('#myInput').trigger('focus')
  
 
 
-
-
-
-    <a href="#" class="list-group-item list-group-item-action active">
-      Cras justo odio
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
-  </div>
