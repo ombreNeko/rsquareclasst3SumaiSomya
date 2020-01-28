@@ -1,0 +1,35 @@
+#guardian_list_parent{
+    display: flex;
+
+}
+
+.guardian_list_item{
+    width: 100%;
+}
+
+.guardian_list_item li{
+    font-size: 15px;
+}
+
+.guardian_list_item hr{
+    width: 100%;
+}
+
+#my_model_footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+#list-guardian{
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+}
+.button-item{
+    margin: 0.5rem;
+}
